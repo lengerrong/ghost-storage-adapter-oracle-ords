@@ -1,0 +1,1 @@
+# ghost-storage-adapter-oracle-ords

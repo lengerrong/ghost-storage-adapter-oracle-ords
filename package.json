@@ -8,10 +8,12 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "ghost-storage-base": "^1.0.0",
     "oracle-ords-client": "^2.2.2"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.0.0",
+    "@types/ghost-storage-base": "^0.0.1",
     "rollup": "^3.9.1",
     "tslib": "^2.4.1",
     "typescript": "^4.9.4"

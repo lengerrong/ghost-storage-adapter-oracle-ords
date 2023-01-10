@@ -1,0 +1,13 @@
+{
+  "name": "ghost-storage-adapter-oracle-ords",
+  "version": "1.0.0",
+  "description": "A Oracle Cloud Autonomous JSON Databases storage adapter for Ghost 5.x",
+  "main": "index.ts",
+  "repository": "https://github.com/lengerrong/ghost-storage-adapter-oracle-ords.git",
+  "author": "Errong Leng",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "oracle-ords-client": "^2.2.2"
+  }
+}

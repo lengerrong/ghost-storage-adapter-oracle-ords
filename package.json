@@ -5,6 +5,7 @@
   "main": "index.ts",
   "repository": "https://github.com/lengerrong/ghost-storage-adapter-oracle-ords.git",
   "author": "Errong Leng",
+  "type": "module",
   "license": "MIT",
   "private": false,
   "dependencies": {
@@ -12,6 +13,9 @@
     "oracle-ords-client": "^2.2.2"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^11.0.0",
     "@types/ghost-storage-base": "^0.0.1",
     "rollup": "^3.9.1",

@@ -7,12 +7,13 @@
             "es2015"
         ],
         "outDir": "dist",
+        "target": "esnext",
         "declaration": true,
         "declarationMap": true,
         "allowSyntheticDefaultImports": true
     },
     "include": [
-        "lib/**/*"
+        "lib/**/*.ts"
     ],
     "exclude": [
         "lib/**/*.spec.ts"

@@ -50,4 +50,4 @@ class OracleImagesStorage extends StorageBase {
     }
 }
 
-module.exports = OracleImagesStorage
+export default OracleImagesStorage

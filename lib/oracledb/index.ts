@@ -1,6 +1,7 @@
 import OracleORDSClient, { Item, ORDSOAuthClientConfig } from 'oracle-ords-client'
 import { join } from 'path'
 import { Request, Response, NextFunction } from 'express-serve-static-core'
+import { Duplex } from 'stream'
 
 export interface OracleDBConfig extends ORDSOAuthClientConfig {
     alias: string
@@ -107,7 +108,12 @@ class OracleDB {
             res.set({
                 'Content-Type': item.value['type']
             })
-            res.status(200).send(JSON.parse(item.value['blob']))
+            res.status(200)
+            const buffer = Buffer.from(JSON.parse(item.value['blob']).data)
+            const duplex = new Duplex()
+            duplex.push(buffer)
+            duplex.push(null)
+            duplex.pipe(res)
         } catch (error) {
             res.status(404).json({ name: error.name, message: error.message })
             next(error)
@@ -115,7 +121,7 @@ class OracleDB {
     }
 
     async read(file: string) {
-        return this.queryItem(file).then(item => JSON.parse(item.value['blob']) as Buffer)
+        return this.queryItem(file).then(item => Buffer.from(JSON.parse(item.value['blob']).data))
     }
 }
 

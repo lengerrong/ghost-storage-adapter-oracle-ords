@@ -30,8 +30,8 @@ cp -r ./node_modules/ghost-storage-adapter-oracle-ords ./content/adapters/storag
 ```
 ### Oracle ORDS OAuth Client
 
-[ISC](https://lengerrong.blogspot.com/2023/01/how-to-setup-oauth-clients-to-connect.html)
+[How To Set Up Oracle ORDS OAuth Client](https://lengerrong.blogspot.com/2023/01/how-to-setup-oauth-clients-to-connect.html)
 
 ## License
 
-[ISC](./LICENSE.md)
+[MIT](./LICENSE)

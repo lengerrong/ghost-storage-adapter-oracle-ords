@@ -1,15 +1,19 @@
 {
   "name": "ghost-storage-adapter-oracle-ords",
-  "version": "2.2.2",
+  "version": "2.3.2",
   "description": "A Oracle Cloud Autonomous JSON Databases storage adapter for Ghost 5.x",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "repository": "https://github.com/lengerrong/ghost-storage-adapter-oracle-ords.git",
   "author": {
     "name": "Errong Leng",
     "email": "errong.leng@gmail.com",
     "url": "https://errong.win"
   },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "keywords": [
     "ghost",
     "ghost storage",
@@ -41,6 +45,6 @@
     "typescript": "^4.9.4"
   },
   "scripts": {
-    "build": "rm -rf dist && rollup -c"
+    "build": "rm -rf dist && rollup -c && cp dist/index.js . && cp dist/index.d.ts ."
   }
 }

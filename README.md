@@ -7,15 +7,15 @@ A Oracle Cloud Autonomous JSON Databases storage adapter for Ghost 5.x
 ```shell
 npm install ghost-storage-adapter-oracle-ords
 mkdir -p ./content/adapters/storage
-cp -r ./node_modules/ghost-storage-adapter-oracle-ords ./content/adapters/storage/oracle-ords
+cp -r ./node_modules/ghost-storage-adapter-oracle-ords/index.js ./content/adapters/storage/OracleImagesStorage.js
 ```
 
 ## Configuration
 
 ```json
 "storage": {
-  "active": "oracle-ords",
-  "oracle-ords": {
+  "active": "OracleImagesStorage",
+  "OracleImagesStorage": {
     "oauthClients": [
         {
             "client_id": "YOUR_ORACLE_AUTONOMOUS_JSON_DATABASE_OAUTH_CLIENT_ID",

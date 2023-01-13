@@ -1,6 +1,6 @@
 {
   "name": "ghost-storage-adapter-oracle-ords",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "A Oracle Cloud Autonomous JSON Databases storage adapter for Ghost 5.x",
   "main": "index.js",
   "types": "index.d.ts",
